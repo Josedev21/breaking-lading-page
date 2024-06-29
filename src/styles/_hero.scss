@@ -47,14 +47,22 @@
                 border: 1px solid #000;
                 margin-right: 20px;
                 cursor: pointer;
+
+                &:hover {
+                    background-color: #ffaa00d8;
+                }
             }
 
             a {
                 text-decoration: none;
                 font-size: 18px;
-                color: #fff;
+                color: silver;
                 font-weight: bold;
                 position: relative;
+
+                &:hover {
+                    color: #fff;
+                }
 
                 &::after {
                     content: " ";
@@ -86,7 +94,7 @@
                 bottom: 5px;
                 left: 140px;
                 flex-wrap: wrap;
-                
+
                 &__item {
                     p {
                         font-size: 12px;
@@ -96,17 +104,19 @@
                         border-radius: 15px;
                         border: 1px solid #fff;
                         margin-top: 10px;
-                        
+
                         &:last-child {
                             margin-left: 10px;
                         }
                     }
                 }
             }
+
             &__two {
                 position: absolute;
                 bottom: 170px;
                 left: 340px;
+
                 &__item {
                     p {
                         font-size: 13px;
@@ -129,12 +139,56 @@
     }
 
     @media (max-width:1024px) {
+
+        &__content {
+            &__links {
+                margin-top: 15px;
+
+                button {
+                    margin-bottom: 10px;
+                }
+
+                a {
+                    margin-left: 5px;
+                }
+            }
+        }
+
         &__image {
+            margin-top: 100px;
+
             &__info {
                 &__item {
-
                     visibility: hidden;
                 }
+            }
+        }
+    }
+
+    @media (max-width:767px) {
+        &__eclipse {
+            &__left {
+                height: 150px;
+                width: 150px;
+            }
+        }
+
+        &__content {
+            width: 100%;
+
+            &__links {
+                a {
+                    display: block;
+                }
+            }
+        }
+
+        &__image {
+            margin: 60 auto;
+
+            img {
+                width: 300px;
+                height: 300px;
             }
         }
     }

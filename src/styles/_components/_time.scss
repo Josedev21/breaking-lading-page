@@ -1,0 +1,52 @@
+.hero {
+    &__contador {
+        width: 580px;
+        height: 119px;
+        background-color: yellow;
+        background-color: rgba(255, 171, 0, 0.31);
+        border-radius: 19px;
+        border: 1px solid #FFAB00;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        top: 90px;
+        z-index: 1;
+        
+
+        &__content {
+            margin-top: 25px;
+            text-align: center;
+
+            p {
+                color: #fff;
+                &:last-child {
+                    font-size: 18px;
+                    margin-top: 10px;
+                    font-weight: bold;
+                }
+
+                span {
+                    color: #FFAB00;
+                    background-color: #fff;
+                    padding: 5px;
+                    border-radius: 5px;
+                }
+            }
+        }
+
+        @media (max-width:1024px) {
+            width: 400px;
+            height: 100px;
+
+            &__content {
+                p {
+                    font-size: 12px;
+
+                    &:last-child {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,141 @@
+.hero {
+    height: 100vh;
+    background-image: url(../images/fundo--hero.jpg);
+    position: relative;
+
+    &__eclipse {
+        &__right {
+            position: absolute;
+            right: 0;
+        }
+
+        &__left {
+            position: absolute;
+            bottom: 0;
+            height: 180px;
+            width: 180px;
+        }
+    }
+
+    &__content {
+        margin-top: 100px;
+        width: 50%;
+
+        h5 {
+            color: #FFAB00;
+            margin-bottom: 5px;
+        }
+
+        p {
+            font-size: 32px;
+            font-weight: 700;
+            color: #fff;
+
+            span {
+                color: #FFAB00;
+            }
+        }
+
+        &__links {
+            margin-top: 50px;
+
+            button {
+                padding: 6px 15px;
+                background-color: #FFAB00;
+                font-size: 18px;
+                font-weight: bold;
+                border: 1px solid #000;
+                margin-right: 20px;
+                cursor: pointer;
+            }
+
+            a {
+                text-decoration: none;
+                font-size: 18px;
+                color: #fff;
+                font-weight: bold;
+                position: relative;
+
+                &::after {
+                    content: " ";
+                    position: absolute;
+                    left: -5px;
+                    bottom: -5px;
+                    width: 165px;
+                    height: 3px;
+                    background-color: silver;
+                }
+            }
+        }
+    }
+
+    &__image {
+        width: 50%;
+        position: relative;
+
+        img {
+            width: 100%;
+        }
+
+        &__info {
+            display: flex;
+
+            &__one {
+                position: absolute;
+                display: flex;
+                bottom: 5px;
+                left: 140px;
+                flex-wrap: wrap;
+                
+                &__item {
+                    p {
+                        font-size: 12px;
+                        padding: 10px 5px;
+                        background-color: rgba(255, 255, 255, .15);
+                        color: #fff;
+                        border-radius: 15px;
+                        border: 1px solid #fff;
+                        margin-top: 10px;
+                        
+                        &:last-child {
+                            margin-left: 10px;
+                        }
+                    }
+                }
+            }
+            &__two {
+                position: absolute;
+                bottom: 170px;
+                left: 340px;
+                &__item {
+                    p {
+                        font-size: 13px;
+                        padding: 10px 5px;
+                        background-color: rgba(255, 255, 255, .15);
+                        color: #fff;
+                        border-radius: 15px;
+                        border: 1px solid #fff;
+                        margin-top: 10px;
+                        display: inline-block;
+                        width: auto;
+
+                        &:last-child {
+                            margin-left: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width:1024px) {
+        &__image {
+            &__info {
+                &__item {
+
+                    visibility: hidden;
+                }
+            }
+        }
+    }
+}

@@ -143,8 +143,9 @@
         &__content {
             &__links {
                 margin-top: 15px;
-
+                
                 button {
+                    display: block;
                     margin-bottom: 10px;
                 }
 
@@ -158,8 +159,9 @@
             margin-top: 100px;
 
             &__info {
-                &__item {
-                    visibility: hidden;
+                &__one,
+                &__two {
+                    display: none;
                 }
             }
         }

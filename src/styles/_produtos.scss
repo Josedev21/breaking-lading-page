@@ -44,9 +44,9 @@
         }
 
         &__image {
-            width: 50%;
+            width: 45%;
             img {
-                width: 100%;
+                width: 90%;
             }
         }
     }
@@ -103,7 +103,12 @@
             }
 
             &__image {
-                margin-left: 40%;
+                margin: 0 auto;
+                img {
+                    margin-top: 100px;
+                    width: 100%;
+
+                }
             }
         }
     }

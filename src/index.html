@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -21,11 +22,11 @@
             </div>
         </header>
         <div class="hero__eclipse">
-            <img class="hero__eclipse__right" src="./images/Ellipse - hero-right.png" alt="eclipse amarelo">
-            <img class="hero__eclipse__left" src="./images/Ellipse - hero-left.png" alt="eclipse amarelo">
+            <img class="hero__eclipse__right" data-aos="fade-left" src="./images/Ellipse - hero-right.png" alt="eclipse amarelo">
+            <img class="hero__eclipse__left" data-aos="fade-right" src="./images/Ellipse - hero-left.png" alt="eclipse amarelo">
         </div>
         <div class="container">
-            <div class="hero__content">
+            <div class="hero__content" data-aos="fade-right">
                 <h5>Breaking Bad</h5>
                 <p>Tenha acesso ao produto <span>mais puro</span> do mercado...</p>
                 <div class="hero__content__links">
@@ -33,7 +34,7 @@
                     <a href="#">Sobre o produto</a>
                 </div>
             </div>
-            <div class="hero__image">
+            <div class="hero__image" data-aos="fade-left">
                 <img src="./images/elementos-hero.png" alt="">
                 <div class="hero__image__info__one">
                     <div class="hero__image__info__one__item">
@@ -52,7 +53,7 @@
     </section>
     <section class="produtos">
         <div class="produtos__box">
-            <div class="produtos__box__content">
+            <div class="produtos__box__content" data-aos="fade-right">
                 <h1>O Produto</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis elit diam. Sed varius erat id
                     elit vestibulum ornare. Donec fermentum <span>eros at mauris facilisis </span>sollicitudin. Duis
@@ -80,15 +81,16 @@
                 </p>
                 <button>Quero o produto</button>
             </div>
-            <div class="produtos__box__image">
+            <div class="produtos__box__image" data-aos="fade-left">
                 <img src="./images/capsulas-section-ofc.png" alt="capsulas">
             </div>
         </div>
-        <div class="produtos__eclipse">
+        <div class="produtos__eclipse" data-aos="fade-right">
             <img src="./images/Ellipse - hero-left.png" alt="eclipse amarelo">
         </div>
     </section>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./scripts/main.js"></script>
 </body>
 

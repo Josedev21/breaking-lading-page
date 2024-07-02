@@ -24,12 +24,15 @@
                     margin-top: 10px;
                     font-weight: bold;
                 }
-
+                
                 span {
                     color: #FFAB00;
                     background-color: #fff;
                     padding: 5px;
                     border-radius: 5px;
+                    display: block;
+                    margin: auto;
+                    width: 80%;
                 }
             }
         }
@@ -58,7 +61,7 @@
                     span {
                         display: block;
                         display: inline-block;
-                        width: auto;
+                        width: 80%;
                         margin-top: 5px;
                     }
                 }

@@ -1,7 +1,8 @@
 AOS.init();
 
 // pega a data do evento
-const dataDoEvento = new Date("Aug 1, 2024 22:00:00");
+const dataDoEvento = new Date("Aug 1, 2024 19:00:00"); 
+// Jul 5, 2024 19:00:00
 const timeStampDoEvento = dataDoEvento.getTime();
 
 const contaAsHrs = setInterval(function() {
@@ -21,5 +22,10 @@ const contaAsHrs = setInterval(function() {
     const SegundosAteEvento = Math.floor(distanciaAteEvento % minEmMs / 1000)
 
     document.getElementById('contador').innerHTML = `${DiasAteEvento} Dias : ${HorasAteEvento} Horas : ${MinutosAteEvento} Minutos : ${SegundosAteEvento} Segundos`
+
+    if (distanciaAteEvento < 0 ) {
+        clearInterval(contaAsHrs);
+        document.getElementById('contador').innerHTML = 'A Promoção acabou'
+    }
 
 },1000)

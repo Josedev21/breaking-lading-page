@@ -1,15 +1,15 @@
+@use '../variables';
+
 .hero {
     &__contador {
         width: 580px;
         height: 119px;
-        background-color: yellow;
-        background-color: rgba(255, 171, 0, 0.31);
+        background-color: variables.$counterbackground;
         border-radius: 19px;
-        border: 1px solid #FFAB00;
+        border: 1px solid variables.$highlightColor;
         position: fixed;
-        // left: 50%;
-        // transform: translate(-50%);
-        margin: 0 auto;
+        left: 50%;
+        transform: translateX(-50%);
         top: 40px;
         z-index: 10;
 
@@ -18,7 +18,7 @@
             text-align: center;
 
             p {
-                color: #fff;
+                color: variables.$textColor;
                 &:last-child {
                     font-size: 18px;
                     margin-top: 10px;
@@ -26,8 +26,8 @@
                 }
                 
                 span {
-                    color: #FFAB00;
-                    background-color: #fff;
+                    color: variables.$highlightColor;
+                    background-color: variables.$textColor;
                     padding: 5px;
                     border-radius: 5px;
                     display: block;

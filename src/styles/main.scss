@@ -1,6 +1,7 @@
-@use "hero";
-@use "_components/time";
-@use "produtos";
+@use 'hero';
+@use '_components/time';
+@use 'produtos';
+@use 'variables';
 
 * {
     margin: 0;

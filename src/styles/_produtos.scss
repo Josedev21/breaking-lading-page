@@ -1,6 +1,8 @@
+@use 'variables';
+
 .produtos {
     height: 100vh;
-    background: linear-gradient(0deg, hsla(0, 0%, 0%, 1) 51%, hsla(40, 100%, 50%, 1) 100%);
+    background: linear-gradient(0deg, variables.$gradientColor1 51%, variables.$gradientColor2 100%);
     position: relative;
     &__box {
         padding-top: 60px;

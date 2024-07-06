@@ -11,7 +11,7 @@
 
         &__content {
             width: 50%;
-            color: #fff;
+            color: variables.$textColor;
             padding-bottom: 0;
 
             h1 {
@@ -26,7 +26,7 @@
                 font-size: 14px;
 
                 span {
-                    color: #FFAB00;
+                    color: variables.$highlightColor;
                 }
             }
 
@@ -36,11 +36,12 @@
                 font-weight: 600;
                 font-size: 18px;
                 border: none;
-                background-color: #FFAB00;
+                background-color: variables.$highlightColor;
+                color: variables.$textColor;
                 cursor: pointer;
 
                 &:hover {
-                    background-color: #ffaa00d8;
+                    background-color: variables.$highlightColor;;
                 }
             }
         }

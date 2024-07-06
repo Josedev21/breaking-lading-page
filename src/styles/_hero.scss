@@ -43,11 +43,12 @@
 
             button {
                 padding: 6px 15px;
-                background-color: variables.$highlightColor;
                 font-size: 18px;
-                font-weight: bold;
-                border: 1px solid variables.$borderColor;
                 margin-right: 20px;
+                font-weight: bold;
+                background-color: variables.$highlightColor;
+                border: 1px solid variables.$textColor;
+                color: variables.$borderColor;
                 cursor: pointer;
 
                 &:hover {
